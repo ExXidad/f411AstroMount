@@ -1,0 +1,9 @@
+include_directories("/Users/xidad/libs/myCppLibs")
+
+ FILE(GLOB_RECURSE MyCppLibSources
+        /Users/xidad/libs/myCppLibs/*.c
+        /Users/xidad/libs/myCppLibs/*.cpp
+        /Users/xidad/libs/myCppLibs/*.*
+    )
+
+list(APPEND SRC_LIST ${MyCppLibSources})
